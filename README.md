@@ -10,6 +10,7 @@ This repository contains hands-on AWS security challenges that I've take-on for 
 - 🪣 S3 bucket enumeration
 - 🔑 IAM permission hunting
 - 🏃‍♂️ Account ID chasing
+- 🚀 Exploit SSRF
 
 ## 🎮 The Challenges
 

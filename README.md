@@ -11,6 +11,7 @@ This repository contains hands-on AWS security challenges that I've take-on for 
 - 🔑 IAM permission hunting
 - 🏃‍♂️ Account ID chasing
 - 🚀 Exploit SSRF
+- 🔍 Hidden files in GCP storage
 
 ## 🎮 The Challenges
 

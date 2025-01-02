@@ -253,3 +253,48 @@ The challenge involves a Google Cloud Storage bucket. The goal is to find a hidd
     *   Enter the cracked password when prompted.
     *   Locate the MD5 hash flag within the extracted files.
 
+## New security-focused outcomes:
+
+- Understand why backup files can pose significant security risks if exposed
+
+- Identify common misconfigurations that can lead to unauthorized access to cloud storage
+
+- Learn and implement best practices for secure backup storage and cloud storage security
+
+## Security context:
+
+a. Why backup files are security risks: Explain that backups often contain sensitive data, can be used to restore systems to vulnerable states, and may contain outdated credentials.
+    - Backup files pose security risks by containing sensitive data like credentials, configuration details, and business logic. Old backups may retain outdated but valid credentials. Attackers can analyze backup structures to understand system architecture and identify vulnerabilities for targeted attacks.
+
+
+b. Common misconfigurations that lead to exposed backups: Describe misconfigurations like overly permissive bucket policies, lack of encryption, and inadequate access controls.
+    - Public bucket access permissions
+    - Missing or weak encryption
+    - Default/unchanged access credentials
+    - Lack of access logging
+    - No version control 
+    - Inadequate backup rotation policies
+
+
+c. Best practices for secure backup storage: Recommend practices like encryption at rest and in transit, strict access controls, regular security audits, and the principle of least privilege.
+    - Implement AES-256 encryption at rest and in transit
+    - Use role-based access control (RBAC)
+    - Enable MFA for backup access
+    - Regular security audits
+    - Apply principle of least privilege
+    - Monitor access patterns
+
+d. Real-world examples of similar vulnerabilities: Cite specific instances where exposed backups led to data breaches or security incidents.
+    - 2019: Capital One breach via misconfigured S3 buckets
+    - 2018: FedEx exposed customer data through unsecured backup server
+    - 2020: Microsoft's internal GitHub repos exposed via public backup
+    - 2021: Facebook's 533M user records leaked via backup data
+
+e. Mitigation strategies for cloud storage security: Provide actionable steps like implementing strong access controls, using encryption, enabling logging and monitoring, and regularly reviewing security configurations.
+    1. Configure bucket-level permissions
+    2. Enable server-side encryption
+    3. Implement access logging
+    4. Regular security reviews
+    5. Use IAM roles and policies
+    6. Enable versioning
+    7. Set up alerts for suspicious activity

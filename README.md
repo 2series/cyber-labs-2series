@@ -13,7 +13,7 @@ This repository contains hands-on AWS security challenges that I've take-on for 
 - 🚀 Exploit SSRF
 - 🔍 Hidden files in GCP storage
 - 💾 Pillage exposed RDS instances
-- 💻 AWS S3 Enumeration and File Download Challenge Solution
+- 💻 S3 Enumeration and File Download
 
 ## 🎮 The Challenges
 

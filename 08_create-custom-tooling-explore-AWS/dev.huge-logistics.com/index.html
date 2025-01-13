@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Huge Logistics</title>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/dev.huge-logistics.com/static/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--SHORTCUT ICONS-->
+<link rel="shortcut icon" href="https://s3.amazonaws.com/dev.huge-logistics.com/static/favicon.png">
+
+<!--META TAGS-->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+
+<!--HEADER-->
+<header>
+<div class="header">
+<section>
+<img src="https://s3.amazonaws.com/dev.huge-logistics.com/static/logo.png" width="100">
+</section>
+<section>
+<div class="top-tab">
+<span>
+<a href="tel:0000000000"><i class="fa fa-phone"></i> 1 206 555 0100</a>
+<a href="emailto:support@huge-logistics.com"><i class="fa fa-envelope"></i> support@huge-logistics.com</a>
+</span>
+<span>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+</span>
+</div>
+<div class="topnav" id="myTopnav">
+<a href="#"><img src="https://s3.amazonaws.com/dev.huge-logistics.com/static/logo.png" id="res_logo"></a>
+<a href="#home" class="active">Home</a>
+<a href="#news">News</a>
+<a href="#contact">Contact</a>
+<div class="dropdown">
+<button class="dropbtn">Menu 
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="#">Client Portal</a>
+<a href="#">Status</a>
+<a href="#">Tracking</a>
+</div>
+</div> 
+<a href="#about">About</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</section>
+</div>
+</header>
+
+
+<!--BANNER-->
+<div class="banner">
+<section>
+<h3>Welcome To <em>Huge</em> Logistics</h3>
+<h1 class="title">We Make Your Transport Simple</h1>
+<a href="#" class="btn1">Our Services</a> <a href="#" class="btn2">Contact Us</a>
+</section>
+<section>
+<div class="form">
+<h1 class="title">Estimate Cost</h1>
+<form action="" method="post">
+<fieldset>
+<select name="weight" id="weight">
+<option value="0">Truck Load</option>
+<option value="500">500 KG</option>
+<option value="1000">1000 KG</option>
+<option value="1500">1500 KG</option>
+<option value="2000">2000 KG</option>
+<option value="5000">5000 KG</option>
+<option value="10000">10000 KG</option>
+</select>
+</fieldset>
+<fieldset>
+<select name="distance" id="distance">
+<option value="0">Distance To Travel</option>
+<option value="10">10 KM</option>
+<option value="20">20 KM</option>
+<option value="30">30 KM</option>
+<option value="40">40 KM</option>
+<option value="50">50 KM</option>
+<option value="50+">50+ KM</option>
+<option value="100+">100+ KM</option>
+</select>
+</fieldset>
+<fieldset>
+<select name="type" id="type">
+<option value="0">Logistic Type</option>
+<option value="home">Home Shift</option>
+<option value="food">Food Commodities</option>
+<option value="essential">Essential Commodities</option>
+<option value="electric">Electic Products</option>
+<option value="other">Other</option>
+</select>
+</fieldset>
+<fieldset class="half-column">
+<span><h3>Estimation: $1500</h3></span>
+<span><button onclick="validate()" class="btn1">Estimate</button></span>
+</fieldset>
+</form>
+</div>
+</section>
+</div>
+
+
+
+<!--SECTION1-->
+<div class="section1">
+<div class="title_header">
+<section>
+<h1 class="title">Why People Choose Us?</h1>
+</section>
+<section>
+<p>We are trusted by businesses globally to get shipments delivered on time. All day, every day.</p>
+</section>
+</div>
+<section>
+<!--CARD BEGINING-->
+<div class="card active">
+<span><i class="fa fa-users"></i></span>
+<span><h1 class="title">145</h1>
+<p>Employees in Team</p></span>
+</div>
+<!--CARD END-->
+<!--CARD BEGINING-->
+<div class="card">
+<span><i class="fa fa-users"></i></span>
+<span><h1 class="title">14450</h1>
+<p>Satisfied Customers</p></span>
+</div>
+<!--CARD END-->
+<!--CARD BEGINING-->
+<div class="card">
+<span><i class="fa fa-road"></i></span>
+<span><h1 class="title">2500 KM</h1>
+<p>Weekly Travel</p></span>
+</div>
+<!--CARD END-->
+</section>
+<section>
+<!--CARD BEGINING-->
+<div class="card">
+<span><i class="fa fa-handshake-o"></i></span>
+<span><h1 class="title">560</h1>
+<p>Regular Clients</p></span>
+</div>
+<!--CARD END-->
+<!--CARD BEGINING-->
+<div class="card active">
+<span><i class="fa fa-check-square-o"></i></span>
+<span><h1 class="title">24500</h1>
+<p>Average Deliveries Done</p></span>
+</div>
+<!--CARD END-->
+</section>
+</div>
+<!-- partial -->
+  <script  src="https://s3.amazonaws.com/dev.huge-logistics.com/static/script.js"></script>
+
+</body>
+</html>

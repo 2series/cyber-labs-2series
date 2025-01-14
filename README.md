@@ -14,7 +14,7 @@ This repository contains hands-on AWS security challenges that I've take-on for 
 - 🔍 Hidden files in GCP storage
 - 💾 Pillage exposed RDS instances
 - 💻 S3 Enumeration and File Download
-- 🚨 RDS instance
+- 🚨 Plunder public RDS snapshots
 
 ## 🎮 The Challenges
 

@@ -3,7 +3,7 @@
 ## Reporting a Vulnerability
 
 - **Confidentiality**: If you discover a security vulnerability, please report it responsibly. Do not disclose it publicly until we have had a chance to address it.
-- **Contact**: Send an email to rihadv021+cyber-repo@gmail.com with the subject line "Security Vulnerability in cyber-labs-2series".
+- **Contact**: Send an email to rihadv021+cyberrepo@gmail.com with the subject line "Security Vulnerability in cyber-labs-2series".
 - **Details**: Include a detailed description of the vulnerability, steps to reproduce it, and any potential impact.
 - **Response Time**: We will acknowledge your report within 48 hours and provide a timeline for resolution.
 
@@ -37,7 +37,7 @@
 
 ## Contact
 
-- **Security Team**: For any security-related inquiries, please contact rihadv021+cyber-repo@gmail.com.
+- **Security Team**: For any security-related inquiries, please contact rihadv021+cyberrepo@gmail.com.
 - **Emergency**: In case of an emergency, please include "URGENT" in the subject line of your email.
 
 ---

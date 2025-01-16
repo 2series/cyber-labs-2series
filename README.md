@@ -12,7 +12,7 @@ rihad@localhost:~$ whoami
   * Windows Internals (the inner workings of the beast, if you will)
   * Offensive R&D (pushing the boundaries of what's possible, and then some)
 
-## The Many Talents of Rihad
+## Talents
 
 * Reverse Engineering: because sometimes you need to take things apart to see how they tick
 * Physical Security: because locks are meant to be picked, and walls are meant to be climbed
@@ -45,7 +45,7 @@ rihad@localhost:~$ whoami
 
 ## Battle Station
 * Main Rig: Because every warrior needs their trusty steed
-  * Custom-built beast running Arch Linux (btw)
+  * Custom-built beast running Kali Linux (btw)
   * Multiple screens for maximum visibility into the digital realm
   * Mechanical keyboard for that satisfying tactical feedback
 

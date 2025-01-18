@@ -2,15 +2,20 @@
 
 ## Table of Contents
 
-- [Progress Overview](#progress-overview)
-- [Completed Levels](#completed-levels)
-- [Skills & Techniques](#skills--techniques)
-- [Tools Used](#tools-used)
+- [Natas Wargame Progress](#natas-wargame-progress)
+  - [Table of Contents](#table-of-contents)
+  - [Progress Overview](#progress-overview)
+  - [Completed Levels](#completed-levels)
+    - [Beginner Levels (0-5)](#beginner-levels-0-5)
+    - [Intermediate Levels (6-11)](#intermediate-levels-6-11)
+    - [Advanced Levels (12-13)](#advanced-levels-12-13)
+  - [Skills \& Techniques](#skills--techniques)
+  - [Tools Used](#tools-used)
 
 ## Progress Overview
 
-Current Progress: Level 13 completed
-Total Levels Completed: 14
+Current Progress: Level 14 completed
+Total Levels Completed: 15
 Difficulty: Beginner to Intermediate
 
 ## Completed Levels
@@ -60,13 +65,14 @@ Difficulty: Beginner to Intermediate
 ### Advanced Levels (12-13)
 
 - **Natas Level 12**: Successfully obtained the password for natas13 by exploiting file upload vulnerability.
-  - Password: trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
   - Difficulty: Medium-Hard
   - Technique: File upload exploitation
 - **Natas Level 13**: Successfully obtained the password for natas14 by bypassing image upload restrictions using file headers.
-  - Password: z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
   - Difficulty: Hard
   - Technique: File upload bypass, MIME type spoofing
+- **Natas Level 14**: Successfully obtained the password for natas15 by exploiting SQL injection vulnerability.
+  - Difficulty: Hard
+  - Technique: SQL Injection Attack
 
 ## Skills & Techniques
 
@@ -84,6 +90,7 @@ Difficulty: Beginner to Intermediate
 | **Regular expressions**      | Understanding and bypassing regex filters                | 10          | Medium     |
 | **File upload exploitation** | Exploiting vulnerable file upload mechanisms             | 12, 13      | Hard       |
 | **MIME type spoofing**       | Bypassing file type restrictions by manipulating headers | 13          | Hard       |
+| **SQL Injection**            | Exploiting SQL query vulnerabilities                     | 14          | Hard       |
 
 ## Tools Used
 

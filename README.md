@@ -5,27 +5,26 @@ rihad@localhost:~$ whoami
 
 ## The Chronicles of a Cybersecurity Maverick
 
-* A genius, billionaire, playboy philanthropist (just kidding, but I'm working on it)
-* A Red Team Member and Offensive R&D Engineer extraordinaire
+I’m not just a security engineer or a machine learning expert; I’m a Cybersecurity Maverick, blending cutting-edge technology with a touch of wizardry to transform complex challenges into groundbreaking solutions. My career is a continuous quest to not only understand the inner workings of systems but also to fortify them against the unseen threats lurking in the digital wilderness
+
 * A master of the dark arts, with a focus on:
   * Red Team Adversarial Emulations (because who doesn't love a good game of cat and mouse?)
   * Windows Internals (the inner workings of the beast, if you will)
   * Offensive R&D (pushing the boundaries of what's possible, and then some)
-
 ## Talents
 
-* Reverse Engineering: because sometimes you need to take things apart to see how they tick
-* Physical Security: because locks are meant to be picked, and walls are meant to be climbed
-* Web Application Security: because the web is a wild west, and someone's gotta keep the outlaws in check
-* AWS Security: because the cloud is the new frontier, and we need to secure it
-* Hardware/Electronics: because sometimes you need to get your hands dirty and build something from scratch
-* Secure Code Review: because even the best of us can use a little help from our friends
-* Machine Learning & AI: because teaching machines to think is the next best thing to being a wizard
-  * Deep Learning: because sometimes you need neural networks as deep as your coffee addiction
-  * Computer Vision: because teaching machines to see is like giving them superhero powers
-  * Natural Language Processing: because making machines understand humans is harder than understanding humans
-  * Data Science: because finding patterns in chaos is an art form
-  * MLOps: because even AI needs a reliable pipeline to thrive
+* **Reverse Engineering:** because sometimes you need to take things apart to see how they tick
+* **Physical Security:** because locks are meant to be picked, and walls are meant to be climbed
+* **Web Application Security:** because the web is a wild west, and someone's gotta keep the outlaws in check
+* **AWS Security:** because the cloud is the new frontier, and we need to secure it
+* **Hardware/Electronics:** because sometimes you need to get your hands dirty and build something from scratch
+* **Secure Code Review:** because even the best of us can use a little help from our friends
+* **Machine Learning & AI:** because teaching machines to think is the next best thing to being a wizard
+  * **Deep Learning:** because sometimes you need neural networks as deep as your coffee addiction
+  * **Computer Vision:** because teaching machines to see is like giving them superhero powers
+  * **Natural Language Processing:** because making machines understand humans is harder than understanding humans
+  * **Data Science:** because finding patterns in chaos is an art form
+  * **MLOps:** because even AI needs a reliable pipeline to thrive
 
 ## The Blog: A Journey of Discovery
 
@@ -48,6 +47,7 @@ rihad@localhost:~$ whoami
   * Custom-built beast running Kali Linux (btw)
   * Multiple screens for maximum visibility into the digital realm
   * Mechanical keyboard for that satisfying tactical feedback
+  * Ai/ML weapons PyTorch and Scikit-learn for my AI work, enabling me to create custom neural network architectures and machine learning models
 
 ## Current Missions
 * Project Shadowkeeper: Building next-gen security tools
@@ -88,7 +88,7 @@ rihad@localhost:~$ whoami
 ```
 
 ## License: The Digital Deadbolt
-Copyright (c) 2024 Rihad Variawa - The Security Wizard
+Copyright (c) 2025 Rihad Variawa - The Security Wizard
 
 Permission is hereby granted, free of charge, to any entity brave enough to obtain a copy
 of this software and associated documentation files (the "Arsenal"), to deal

@@ -14,8 +14,8 @@
 
 ## Progress Overview
 
-Current Progress: Level 14 completed
-Total Levels Completed: 15
+Current Progress: Level 15 completed
+Total Levels Completed: 16
 Difficulty: Beginner to Intermediate
 
 ## Completed Levels
@@ -73,6 +73,9 @@ Difficulty: Beginner to Intermediate
 - **Natas Level 14**: Successfully obtained the password for natas15 by exploiting SQL injection vulnerability.
   - Difficulty: Hard
   - Technique: SQL Injection Attack
+- **Natas Level 15**: Successfully obtained the password for natas16 using blind SQL injection and brute force techniques.
+  - Difficulty: Hard
+  - Technique: Blind SQL Injection, Python Scripting
 
 ## Skills & Techniques
 
@@ -91,25 +94,27 @@ Difficulty: Beginner to Intermediate
 | **File upload exploitation** | Exploiting vulnerable file upload mechanisms             | 12, 13      | Hard       |
 | **MIME type spoofing**       | Bypassing file type restrictions by manipulating headers | 13          | Hard       |
 | **SQL Injection**            | Exploiting SQL query vulnerabilities                     | 14          | Hard       |
+| **Blind SQL Injection**      | Using boolean-based SQL injection with Python scripting  | 15          | Hard       |
 
 ## Tools Used
 
 1. **Browser Developer Tools**
-
    - Purpose: Source code inspection, HTML modification
    - Levels: 0-3
 
 2. **Burp Suite**
-
    - Purpose: HTTP traffic interception and modification
    - Features used: Proxy, Repeater
    - Levels: 4-5, 11, 12-13
 
 3. **Text Editors**
-
    - Purpose: Code analysis, script writing
    - Levels: 6-13
 
 4. **Encoding/Decoding Tools**
    - Purpose: Cryptographic analysis
    - Levels: 8, 11
+
+5. **Python Scripts**
+   - Purpose: Automated exploitation and brute forcing
+   - Levels: 15

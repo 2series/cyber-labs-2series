@@ -1,0 +1,73 @@
+name: Cyber Labs CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install security scanning tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install bandit safety
+
+      - name: Run Bandit security scanner
+        run: bandit -r . -ll -ii
+
+      - name: Check for known vulnerabilities in dependencies
+        run: safety check
+
+  code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install linting tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 black isort
+
+      - name: Run linting checks
+        run: |
+          flake8 .
+          black . --check
+          isort . --check-only
+
+  ml-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install ML dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch torchvision scikit-learn
+
+      - name: Verify ML environment
+        run: |
+          python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
+          python -c "import sklearn; print(f'Scikit-learn version: {sklearn.__version__}')"

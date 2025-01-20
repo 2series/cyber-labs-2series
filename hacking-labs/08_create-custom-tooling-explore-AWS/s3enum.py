@@ -6,4 +6,3 @@ aws_url = (
 )
 response = requests.get(aws_url)
 print(response)
-

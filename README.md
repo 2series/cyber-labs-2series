@@ -5,7 +5,7 @@ rihad@localhost:~$ whoami
 
 ## The Chronicles of a Cybersecurity Maverick
 
-I’m not just a security engineer or a machine learning expert; I’m a Cybersecurity Maverick, blending cutting-edge technology with a touch of wizardry to transform complex challenges into groundbreaking solutions. My career is a continuous quest to not only understand the inner workings of systems but also to fortify them against the unseen threats lurking in the digital wilderness
+As a security research and machine learning specialist; I’m a Cybersecurity Maverick, blending cutting-edge technology with a touch of wizardry to transform complex challenges into groundbreaking solutions. My career is a continuous quest to not only understand the inner workings of systems but also to fortify them against the unseen threats lurking in the digital wilderness
 
 * A master of the dark arts, with a focus on:
   * Red Team Adversarial Emulations (because who doesn't love a good game of cat and mouse?)

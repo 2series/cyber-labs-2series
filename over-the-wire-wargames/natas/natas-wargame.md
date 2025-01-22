@@ -14,9 +14,9 @@
 
 ## Progress Overview
 
-Current Progress: Level 15 completed
-Total Levels Completed: 16
-Difficulty: Beginner to Intermediate
+Current Progress: Level 17 completed
+Total Levels Completed: 18
+Difficulty: Beginner to Advanced
 
 ## Completed Levels
 
@@ -62,7 +62,7 @@ Difficulty: Beginner to Intermediate
   - Difficulty: Hard
   - Technique: Cryptography analysis
 
-### Advanced Levels (12-13)
+### Advanced Levels (12-17)
 
 - **Natas Level 12**: Successfully obtained the password for natas13 by exploiting file upload vulnerability.
   - Difficulty: Medium-Hard
@@ -76,6 +76,12 @@ Difficulty: Beginner to Intermediate
 - **Natas Level 15**: Successfully obtained the password for natas16 using blind SQL injection and brute force techniques.
   - Difficulty: Hard
   - Technique: Blind SQL Injection, Python Scripting
+- **Natas Level 16**: Successfully obtained the password for natas17 by exploiting command injection with grep and command substitution.
+  - Difficulty: Hard
+  - Technique: Command Injection, Python Scripting
+- **Natas Level 17**: Successfully obtained the password for natas18 using time-based blind SQL injection.
+  - Difficulty: Hard
+  - Technique: Time-Based Blind SQL Injection, Python Scripting
 
 ## Skills & Techniques
 
@@ -95,6 +101,8 @@ Difficulty: Beginner to Intermediate
 | **MIME type spoofing**       | Bypassing file type restrictions by manipulating headers | 13          | Hard       |
 | **SQL Injection**            | Exploiting SQL query vulnerabilities                     | 14          | Hard       |
 | **Blind SQL Injection**      | Using boolean-based SQL injection with Python scripting  | 15          | Hard       |
+| **Command Substitution**     | Using $() syntax to inject commands within commands      | 16          | Hard       |
+| **Time-Based SQL Injection** | Exploiting SQL injection using time delays               | 17          | Hard       |
 
 ## Tools Used
 
@@ -109,7 +117,7 @@ Difficulty: Beginner to Intermediate
 
 3. **Text Editors**
    - Purpose: Code analysis, script writing
-   - Levels: 6-13
+   - Levels: 6-17
 
 4. **Encoding/Decoding Tools**
    - Purpose: Cryptographic analysis
@@ -117,4 +125,4 @@ Difficulty: Beginner to Intermediate
 
 5. **Python Scripts**
    - Purpose: Automated exploitation and brute forcing
-   - Levels: 15
+   - Levels: 15, 16, 17

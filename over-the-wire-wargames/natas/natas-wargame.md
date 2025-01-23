@@ -130,4 +130,3 @@ Difficulty: Beginner to Advanced
 5. **Python Scripts**
    - Purpose: Automated exploitation and brute forcing
    - Levels: 15, 16, 17, 18
-

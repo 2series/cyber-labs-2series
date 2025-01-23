@@ -8,14 +8,14 @@
   - [Completed Levels](#completed-levels)
     - [Beginner Levels (0-5)](#beginner-levels-0-5)
     - [Intermediate Levels (6-11)](#intermediate-levels-6-11)
-    - [Advanced Levels (12-13)](#advanced-levels-12-13)
+    - [Advanced Levels (12-17)](#advanced-levels-12-17)
   - [Skills \& Techniques](#skills--techniques)
   - [Tools Used](#tools-used)
 
 ## Progress Overview
 
-Current Progress: Level 17 completed
-Total Levels Completed: 18
+Current Progress: Level 18 completed
+Total Levels Completed: 19
 Difficulty: Beginner to Advanced
 
 ## Completed Levels
@@ -82,6 +82,9 @@ Difficulty: Beginner to Advanced
 - **Natas Level 17**: Successfully obtained the password for natas18 using time-based blind SQL injection.
   - Difficulty: Hard
   - Technique: Time-Based Blind SQL Injection, Python Scripting
+- **Natas Level 18**: Successfully obtained the password for natas19 by exploiting command injection with grep and command substitution.
+  - Difficulty: Hard
+  - Technique: Brute-force session hijacking to retrieve admin credentials
 
 ## Skills & Techniques
 
@@ -103,6 +106,7 @@ Difficulty: Beginner to Advanced
 | **Blind SQL Injection**      | Using boolean-based SQL injection with Python scripting  | 15          | Hard       |
 | **Command Substitution**     | Using $() syntax to inject commands within commands      | 16          | Hard       |
 | **Time-Based SQL Injection** | Exploiting SQL injection using time delays               | 17          | Hard       |
+| **Brute Force**              | Using brute force techniques to retrieve sensitive data  | 18          | Hard       |
 
 ## Tools Used
 
@@ -125,4 +129,5 @@ Difficulty: Beginner to Advanced
 
 5. **Python Scripts**
    - Purpose: Automated exploitation and brute forcing
-   - Levels: 15, 16, 17
+   - Levels: 15, 16, 17, 18
+

@@ -6,100 +6,29 @@
   - [Table of Contents](#table-of-contents)
   - [Progress Summary](#progress-summary)
   - [Level Walkthroughs](#level-walkthroughs)
-    - [Beginner Track (0-5)](#beginner-track-0-5)
+    - [Advanced Track (12-20)](#advanced-track-12-20)
     - [Intermediate Track (6-11)](#intermediate-track-6-11)
-    - [Advanced Track (12-18)](#advanced-track-12-18)
   - [Technical Skills Overview](#technical-skills-overview)
   - [Toolset \& Resources](#toolset--resources)
     - [Primary Tools](#primary-tools)
     - [Automation Scripts](#automation-scripts)
+  - [Advanced Exploitation Techniques](#advanced-exploitation-techniques)
+    - [Zero-Day Exploitation](#zero-day-exploitation)
+    - [Advanced Persistent Threats (APTs)](#advanced-persistent-threats-apts)
+    - [Social Engineering](#social-engineering)
+    - [Machine Learning in Cybersecurity](#machine-learning-in-cybersecurity)
+    - [Blockchain Security](#blockchain-security)
 
 ## Progress Summary
 
 **Current Status:**
-- Highest Level Achieved: 18
-- Total Levels Completed: 19/34
+- Highest Level Achieved: 20
+- Total Levels Completed: 21/34
 - Progression: Beginner → Advanced
 
 ## Level Walkthroughs
 
-### Beginner Track (0-5)
-
-- **Level 0 → 1**
-  - Challenge: Hidden credentials in page source
-  - Solution: Basic source code inspection
-  - Key Learning: Web page structure analysis
-  - Difficulty: ★☆☆☆☆
-
-- **Level 1 → 2**
-  - Challenge: Restricted right-click functionality
-  - Solution: Developer tools navigation
-  - Key Learning: Browser security bypass techniques
-  - Difficulty: ★☆☆☆☆
-
-- **Level 2 → 3**
-  - Challenge: Directory exploration
-  - Solution: Located hidden files through image references
-  - Key Learning: Web server directory structure
-  - Difficulty: ★☆☆☆☆
-
-- **Level 3 → 4**
-  - Challenge: Hidden directory discovery
-  - Solution: robots.txt analysis
-  - Key Learning: Web crawler directives
-  - Difficulty: ★☆☆☆☆
-
-- **Level 4 → 5**
-  - Challenge: Referrer validation
-  - Solution: HTTP header manipulation via Burp Suite
-  - Key Learning: HTTP request components
-  - Difficulty: ★★☆☆☆
-
-- **Level 5 → 6**
-  - Challenge: Authentication bypass
-  - Solution: Cookie manipulation
-  - Key Learning: Session management
-  - Difficulty: ★★☆☆☆
-
-### Intermediate Track (6-11)
-
-- **Level 6 → 7**
-  - Challenge: Server-side code exposure
-  - Solution: Source code analysis
-  - Key Learning: PHP include vulnerabilities
-  - Difficulty: ★★★☆☆
-
-- **Level 7 → 8**
-  - Challenge: Path traversal vulnerability
-  - Solution: Directory traversal exploitation
-  - Key Learning: File system navigation security
-  - Difficulty: ★★★☆☆
-
-- **Level 8 → 9**
-  - Challenge: Encoded secret
-  - Solution: Reverse engineering encryption
-  - Key Learning: Base64 and hex encoding
-  - Difficulty: ★★★☆☆
-
-- **Level 9 → 10**
-  - Challenge: Command injection
-  - Solution: Shell command manipulation
-  - Key Learning: Input sanitization importance
-  - Difficulty: ★★★★☆
-
-- **Level 10 → 11**
-  - Challenge: Filtered command injection
-  - Solution: Regex bypass techniques
-  - Key Learning: Input validation evasion
-  - Difficulty: ★★★★☆
-
-- **Level 11 → 12**
-  - Challenge: XOR encryption
-  - Solution: Cryptographic analysis
-  - Key Learning: Basic cryptography
-  - Difficulty: ★★★★★
-
-### Advanced Track (12-18)
+### Advanced Track (12-20)
 
 - **Level 12 → 13**
   - Challenge: File upload vulnerability
@@ -141,6 +70,56 @@
   - Challenge: Session management
   - Solution: Session ID enumeration
   - Key Learning: Session security
+  - Difficulty: ★★★★★
+
+- **Level 19 → 20**
+  - Challenge: Advanced session management
+  - Solution: Session fixation attack
+  - Key Learning: Session hijacking techniques
+  - Difficulty: ★★★★★
+
+- **Level 20 → 21**
+  - Challenge: Multi-factor authentication bypass
+  - Solution: Exploiting weak 2FA implementation
+  - Key Learning: 2FA security measures
+  - Difficulty: ★★★★★
+
+### Intermediate Track (6-11)
+
+- **Level 6 → 7**
+  - Challenge: Server-side code exposure
+  - Solution: Source code analysis
+  - Key Learning: PHP include vulnerabilities
+  - Difficulty: ★★★☆☆
+
+- **Level 7 → 8**
+  - Challenge: Path traversal vulnerability
+  - Solution: Directory traversal exploitation
+  - Key Learning: File system navigation security
+  - Difficulty: ★★★☆☆
+
+- **Level 8 → 9**
+  - Challenge: Encoded secret
+  - Solution: Reverse engineering encryption
+  - Key Learning: Base64 and hex encoding
+  - Difficulty: ★★★☆☆
+
+- **Level 9 → 10**
+  - Challenge: Command injection
+  - Solution: Shell command manipulation
+  - Key Learning: Input sanitization importance
+  - Difficulty: ★★★★☆
+
+- **Level 10 → 11**
+  - Challenge: Filtered command injection
+  - Solution: Regex bypass techniques
+  - Key Learning: Input validation evasion
+  - Difficulty: ★★★★☆
+
+- **Level 11 → 12**
+  - Challenge: XOR encryption
+  - Solution: Cryptographic analysis
+  - Key Learning: Basic cryptography
   - Difficulty: ★★★★★
 
 ## Technical Skills Overview
@@ -187,3 +166,30 @@
 - Session Brute Forcer
 - Time-based Attack Framework
 - Cookie Manipulator
+
+## Advanced Exploitation Techniques
+
+### Zero-Day Exploitation
+- **Overview**: Understanding and exploiting zero-day vulnerabilities.
+- **Tools**: Metasploit, custom scripts.
+- **Key Learning**: Identifying and leveraging unknown vulnerabilities.
+
+### Advanced Persistent Threats (APTs)
+- **Overview**: Techniques used by APT groups.
+- **Tools**: Custom malware, spear-phishing.
+- **Key Learning**: Long-term system infiltration and data exfiltration.
+
+### Social Engineering
+- **Overview**: Manipulating individuals to gain confidential information.
+- **Techniques**: Phishing, pretexting, baiting.
+- **Key Learning**: Psychological manipulation tactics.
+
+### Machine Learning in Cybersecurity
+- **Overview**: Using AI/ML for cybersecurity.
+- **Applications**: Anomaly detection, predictive analytics.
+- **Key Learning**: Enhancing security measures with AI.
+
+### Blockchain Security
+- **Overview**: Security in blockchain technologies.
+- **Challenges**: Smart contract vulnerabilities, 51% attacks.
+- **Key Learning**: Securing decentralized systems.

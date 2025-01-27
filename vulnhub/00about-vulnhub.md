@@ -1,0 +1,2 @@
+**What's VulnHub?**
+VulnHub is a valuable resource for individuals seeking hands-on experience in digital security, software, and network administration. It offers a comprehensive catalog of legally breakable, hackable, and exploitable resources, providing a safe environment for learning and practicing various skills, including penetration testing, vulnerability assessment, and security research

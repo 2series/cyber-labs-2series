@@ -18,9 +18,8 @@ Our goal is to find **3 keys** hidden in different locations. Each key is progre
 2. **Network Scanning**: Since the Mr. Robot VM is hosted on my PC using a Bridged Adapter in VirtualBox, we will scan our network to identify the IP address. Use the following command:
    ```bash
    2series@kali:~# netdiscover
-
    This command will scan your network and display the IP address of the Mr. Robot VM
-   **Note**: The output of this command will provide information about the network and the IP address of the VM
+   **Note**: The output of this command will provide information about the network and help identify the IP address of the Mr. Robot VM
 
 3. **Nmap Scan**: Once we have the target IP, run an Nmap scan to check for open ports and services:
    ```bash

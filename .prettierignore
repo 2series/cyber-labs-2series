@@ -1,0 +1,37 @@
+# Dependencies and build outputs
+node_modules
+dist
+build
+coverage
+
+# Version control
+.git
+.svn
+.hg
+
+# Markdown files in specific documentation directories
+#vulnhub/*.md
+#writeups/*.md
+
+# Other documentation files
+*.pdf
+*.doc
+*.docx
+
+# Log files
+*.log
+
+# Binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# System files
+.DS_Store
+Thumbs.db

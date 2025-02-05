@@ -153,4 +153,3 @@ These are a series of challenges. The object of the game is to acquire root acce
     -   The output confirms that root access has been obtained.
     
     </reflection>
-tell me about this page

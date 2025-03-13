@@ -1,10 +1,10 @@
 # Access Secrets Manager via Lambda Function
 
-## how to use the LFI (Local File Injection) vulnerability in a Lambda function to access AWS Secrets Manager.
+## How to use the LFI (Local File Injection) vulnerability in a Lambda function to access AWS Secrets Manager.
 
 **Core Concept: Exploiting LFI to Steal Lambda Credentials, Then Access Secrets Manager**
 
-Action plan:
+## Action plan:
 
 1.  **LFI Vulnerability:**  The Lambda function powering the web application has a Local File Inclusion (LFI) vulnerability.  This means user-supplied input (the `employee_code` parameter) is used *unsafely* to construct a file path.
 2.  **Leaking Environment Variables:**  By using path traversal (`../../..`) in the `employee_code`, we read the `/proc/self/environ` file. This file, in the context of a Lambda function, contains the function's environment variables. Critically, these include temporary AWS credentials (access key, secret key, session token) associated with the Lambda's IAM role.

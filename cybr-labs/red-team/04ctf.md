@@ -101,6 +101,4 @@ Let's consider a slightly more concrete example to illustrate the attack and its
     *   **Bucket Policy Best Practices:**  Use condition keys (e.g., `aws:SourceIp`, `aws:PrincipalOrgID`) to restrict access further, even within allowed accounts.
     *   **Regular Audits:** Regularly review bucket policies and IAM roles to identify and remediate overly permissive configurations.
     *   **S3 Block Public Access:** Use S3 Block Public Access settings to prevent accidental public exposure of buckets.
-    *   **Infrastructure as Code (IaC):** Use IaC tools like Terraform or CloudFormation to manage bucket policies, allowing for version control, review, and automated enforcement of security best practices.$$
-
-$$
+    *   **Infrastructure as Code (IaC):** Use IaC tools like Terraform or CloudFormation to manage bucket policies, allowing for version control, review, and automated enforcement of security best practices.

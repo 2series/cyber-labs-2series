@@ -60,7 +60,7 @@ This lab focuses on creating Amazon S3 buckets and uploading objects while demon
 
     *   **`aws s3 cp example.txt s3://<BUCKET_NAME>/ --profile s3role`:** Upload a file.
 
-    *   **Demonstrating Access Denied:** The lab shows that if we try to run `aws s3api create-bucket` with the `--profile s3` (the IAM User profile), we get an "Access Denied" error. This highlights the difference in permissions between the user and the assumed role.
+    *   **Demonstrating Access Denied:** Our lab shows that if we try to run `aws s3api create-bucket` with the `--profile s3` (the IAM User profile), we get an "Access Denied" error. This highlights the difference in permissions between the user and the assumed role.
 
 7.  **Accessing the AWS Console (Optional):**
 

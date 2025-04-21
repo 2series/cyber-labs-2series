@@ -1,6 +1,5 @@
 ### Governance
 
-
 Two Core Components of Governance
 
 Awareness:
